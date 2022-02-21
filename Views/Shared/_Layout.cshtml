@@ -1,0 +1,33 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WOPS Cloud Director</title>
+    <link rel="stylesheet" href="~/css/Layout.css" />
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <a asp-area="" asp-controller="Home" asp-action="Index">Login</a>
+            <a asp-area="" asp-controller="Deploy" asp-action="Index">VM erstellen</a>
+            <a asp-area="" asp-controller="Progress" asp-action="Index">Fortschritt verfolgen</a>
+        </div>
+        <hr />
+        <hr />
+    </header>
+    <nav></nav>
+    <main role="main" class="pb-3">
+        @RenderBody()
+    </main>
+
+    <footer class="border-top footer text-muted">
+        <hr />
+        <hr />
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

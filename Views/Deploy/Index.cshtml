@@ -1,0 +1,59 @@
+﻿<div class="text-center">
+    <h2 class="display-4">VM konfigurieren und erstellen</h2>
+</div>
+
+<table class="outerTable" id="outerTable">
+    <tr class=" rowVApp">
+        <td class="label"> vApp:</td>
+        <td >
+            <select id="selVapp" class="input">
+            </select>
+        </td>
+    </tr>
+    <tr class=" rowTemplate">
+        <td class="label">Template:</td>
+        <td>
+            <select id="selTemplate"  class="input">
+            </select>
+        </td>
+    </tr>
+    <tr class=" rowName">
+        <td class="label">Container-Name:</td>
+        <td><input class="input" id="inName" type="text" value="" placeholder="Name..." /></td>
+    </tr>
+    <tr class=" rowPcName">
+        <td class="label">PC-Name:</td>
+        <td><input class="input" id="inPcName" type="text" value="" placeholder="PC-Name..." /></td>
+    </tr>
+    <tr class=" rowCustom" id="inCores">
+        <td class="label">CPU-Kerne</td>
+        <td>
+            <input type="number" id="selCores" placeholder="03" value="-3"  class="input" />
+        </td>
+        <td></td>
+    </tr>
+    <tr class=" rowCustom" id="inRam">
+        <td class="label">RAM in GB</td>
+        <td>
+            <input type="number" id="selRam" placeholder="03" value="-3" class="input" />
+        </td>
+        <td></td>
+    </tr>
+    <tr class=" rowCustom" id="inHdd">
+        <td class="label">Festplatte in GB</td>
+        <td>
+            <input type="number" id="selHdd" placeholder="03" value="-3" class="input" />
+        </td>
+        <td></td>
+    </tr>
+</table>
+<div class="format"></div>
+<div>
+    <button class="button3" id="deploy">VM erstellen</button>
+    <button class="format"></button>
+    <button class="button4" id="btnTest">Hilfe</button>
+</div>
+<p class="format"></p>
+<div class="errorDiv" id="errorDiv"></div>
+<div class="help" id="help"></div>
+<script src="~/js/deploy.js"></script>

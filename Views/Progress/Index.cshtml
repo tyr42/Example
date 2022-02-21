@@ -1,0 +1,27 @@
+﻿@model int
+<div class="text-center">
+    <h2 class="display-4">Fortschritt der Erstellung verfolgen</h2>
+</div>
+<table class="outerTable" id="outerTable">
+    <tr class="row">
+        <td class="col1"><h3>Schritt 1:</h3></td>
+        <td class="col2"><h3>Basis VM erstellen</h3></td>
+        <td class="col3" id="step1"><h3 id="step1h3">0%</h3></td>
+    </tr>
+    <tr class="row">
+        <td class="col1"><h3>Schritt 2:</h3></td>
+        <td class="col2"><h3>VM angepassen</h3></td>
+        <td class="col3" id="step2"><h3>0%</h3></td>
+    </tr>
+    <tr class="row">
+        <td class="col1"><h3> Schritt 3:</h3></td>
+        <td class="col2"><h3> Backupeinstellungen konfigurieren</h3></td>
+        <td class="col3" id="step3"><h3>0%</h3></td>
+    </tr>
+</table>
+<p class="format"></p>
+<p></p>
+<div class="result" id="result"><h2>Die VM ist jetzt einsatzfähig</h2></div>
+<div class="errorDiv" id="errorDiv"></div>
+<div class="help" id="help"></div>
+<script src="~/js/progress.js"></script>

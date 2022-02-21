@@ -1,0 +1,141 @@
+﻿body {
+    display: grid;
+    background-color: rgb(235, 234, 231, 0.55);
+    //background-color: rgba(243, 40, 0, 0.39);
+    grid-template-columns: 75px 3fr 1fr;
+    grid-template-areas:
+        "nav header header"
+        "nav main main"
+        "nav footer footer"
+}
+
+header {
+    grid-area: header;
+    width: 600px;
+}
+
+nav {
+    grid-area: nav;
+}
+
+main {
+    grid-area: main;
+    width: 600px;
+    align-content: center;
+}
+
+footer {
+    grid-area: footer;
+    width: 600px;
+}
+
+a {
+    font-size: 15px;
+    color: black;
+}
+
+#tabledone {
+}
+
+.button1 {
+    width: 141px;
+    background-color: rgb(76, 175, 82, 0.60); /* light green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button2 {
+    width: 141px;
+    background-color: rgb(222, 92, 96, 0.60); /* light red */
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button3 {
+    width: 171px;
+    background-color: rgb(39, 129, 226, 0.60); /* light blue */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button4 {
+    width: 171px;
+    background-color: rgb(147, 159, 150, 0.90); /* grey */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button5 {
+    width: 27px;
+}
+
+.format {
+    height: 15px;
+    visibility: hidden;
+}
+
+.outerTable {
+    padding: 5px;
+}
+
+.label {
+    padding: 10px;
+    margin: 5px;
+    width: 150px;
+}
+
+.input {
+    width: 300px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.row {
+    height: 50px;
+}
+
+.col1 {
+    width: 100px;
+}
+
+.col2 {
+    width: 370px;
+}
+
+.col3 {
+    width: 150px;
+    text-align: center;
+/*    background-color: linen;*/    
+    background-color: rgb(76, 175, 82, 0.96);
+}
+
+.menu > a {
+    font-size: 21px;
+    margin: 10px;
+    padding: 21px;
+}
+
+.help {
+    visibility: hidden;
+}
